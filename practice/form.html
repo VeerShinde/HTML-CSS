@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Enter your name">
+    <br>
+    <label>Submit</label>
+    <input type="submit" name="submit">
+    <br>
+    <label>Upload File</label>
+    <input type="file">
+    <br>
+    <input type="date" name="date">
+    <br>
+    <input type="radio" value="on">Maths
+    <br>
+    <input type="range">
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+    <div>
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" required placeholder="Enter first name">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" required placeholder="Enter last name">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="radio">Select a Race:</label>
+
+        <br>
+        <br>
+
+        <input type="radio" name="race" id="Fun" value="funrun">
+        <label for="Fun">Fun Run 5k</label>
+
+        <br>
+
+        <input type="radio" name="race" id="half" value="half">
+        <label for="half">Half Marathon</label>
+
+        <br>
+
+        <input type="radio" name="race" id="full" value="full">
+        <label for="full">Full Marathon</label>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="age">Select Age Group</label>
+        <select name="age" id="age">
+            <option value="under18">Under 18</option>
+            <option value="18-30">18-30</option>
+            <option value="30-50">30-50</option>
+            <option value="50+">50+</option>
+        </select>
+    </div>
+
+    <div>
+        <button>
+            Register
+        </button>
+    </div>
+
+</body>
+
+</html>

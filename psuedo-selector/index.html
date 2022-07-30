@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"]{
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        .container{
+            display: block;
+
+        }
+        a[target]{
+            color: blueviolet;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        /* this will apply css to the 4th child */
+        li:nth-child(4){
+            color: aqua;
+        }
+
+        li:nth-child(2n+0){
+            color: green;
+        }
+
+        li:nth-child(odd){
+            color: pink;
+        }
+
+        li:nth-child(even){
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="http://google.com" target="_blank">Go to google</a>
+        <a href="http://youtube.com">Go to Youtube</a>
+        <form action="">
+            <input type="text" placeholder="Enter Name">
+            <input type="password" placeholder="enter password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+        </ul>
+        
+    </div>
+</body>
+</html>

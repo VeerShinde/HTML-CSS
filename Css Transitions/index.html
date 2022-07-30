@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: black;
+            
+        }
+
+        h3{
+            background-color: red;
+            color: white;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: 100px;
+            top: 90px;   
+            /* transition: back-ground; */
+            /* transition-property: background-color;
+            transition-delay: 1s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in; */
+
+            /* shorthand way to give transitions */
+            /* transition: transition-property transition-duration transition-timing-function transition-delay  */
+            transition: background-color 2s ease-in-out .3s;
+            /* Be patience and hover on it */
+
+            /* all will take all properties which we give */
+            transition: all 2s ease-in-out .3s;
+        }
+
+        h3:hover{
+            background-color: yellow;
+            width: 200px;
+            height: 400px;
+            color: darkcyan;
+            margin: 50px;
+            border-radius: 50px;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Veer Shinde</h3>
+    </div>
+</body>
+</html>

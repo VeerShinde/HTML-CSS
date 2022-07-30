@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and Customs Properties</title>
+    <style>
+        /* so here we can define variable with property and value and use wherever we want */
+        :root{
+            --normal_color: black;
+            --bg_color:blue;
+            --maxw: 500px;
+            /* we can store anything in variable */
+        }
+
+        .container{
+            display: flex;
+            background-color: var(--normal_color);
+            --right_color: purple;
+        }
+
+        .box{
+            /* if we define variable here then we use that variable in this block only */
+            --wrong_color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 3px 3px var(--wrong_color);
+            /* we can't use right color here */
+            height: 200px;
+            width: var(--maxw);
+            background-color: var(--bg_color);
+            margin: 10px 10px;
+            text-align: center;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

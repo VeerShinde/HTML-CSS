@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and text shadow</title>
+    <style>
+
+        .container{
+            display: flex;
+        }
+
+        .item{
+            padding: 23px 10px;
+            /* border: 2px solid black; */
+            margin: 10px 10px;
+            background-color: lightblue;
+            /* box-shadow: 6px     6px    yellow; */
+                    /*  height  width   color         in downwords direction*/      
+            /* box-shadow: -6px    -6px   red;       in upwords direction */
+            
+            /* height, width, blur radius */
+            /* box-shadow: 6px 6px 10px yellow; */
+            box-shadow: -6px -6px 10px yellow;
+
+            /* height, width, blur radius, spread radius*/ 
+            box-shadow: -6px -6px 10px 5px yellow;
+            /* you can also use rgba for opacity of color */
+
+            /* this will create shadow inside box */
+            box-shadow: inset 3px 3px red;
+
+            /* multiple shadow */
+            box-shadow: 5px 5px darkblue, 7px 7px darkred;
+        }
+
+        .item h2{
+             /*  height  width   color*/
+            text-shadow: 3px 3px green;
+            text-shadow: -3px -3px green;
+
+            /* height, width, blur radius */
+            text-shadow: 2px 2px 2px white;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">
+            <h2>this is c++</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa vero sit tempore blanditiis sequi quisquam. Eaque sed animi dicta illum, fuga consequuntur incidunt dolores laborum rem culpa, tempore perspiciatis facere in, quas excepturi?</p>
+        </div>
+        <div class="item" id="item-2">
+            <h2>this is python</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa vero sit tempore blanditiis sequi quisquam. Eaque sed animi dicta illum, fuga consequuntur incidunt dolores laborum rem culpa, tempore perspiciatis facere in, quas excepturi?</p>
+        </div>
+        <div class="item" id="item-3">
+            <h2>this is C</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa vero sit tempore blanditiis sequi quisquam. Eaque sed animi dicta illum, fuga consequuntur incidunt dolores laborum rem culpa, tempore perspiciatis facere in, quas excepturi?</p>
+        </div>
+    </div>
+</body>
+</html>

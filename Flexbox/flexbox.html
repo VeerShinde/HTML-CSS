@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .flex-container{
+            height: 650px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;  /* default is row*/
+            /* flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse; */
+
+            /* flex properties for flex conatiner */
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap;
+            flex-wrap: wrap-reverse; */
+
+            /* Short hand property to combine to command together
+               flex-direction and flex wrap */
+            /* flex-flow: column wrap-reverse; */
+
+            /* Justify-content work on main axis(Horizontal) */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around; */
+
+            /* Align-item work on cross axis(vertical) */
+            /* align-items: center; */
+            /* align-items: flex-end;
+            align-items: flex-start; */
+            /* align-items: stretch; */
+        }
+
+
+        .item{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: yellow;
+            margin: 10px;
+            padding: 3px;
+            text-align: center;
+
+            /* flex properties for flex items */
+        }
+
+        /* order property higher the value later it appears in container */
+        /* flex-grow higher the value the item will spread */
+        /* flex-shrink hugher the value that item will shrink*/
+        /* when flex-direction is row flex-basis will control width */
+        /* when flex-direction is column flex-basis will control height */
+        /* align-self to change particular flex item location in container*/
+        #item-1{
+            /* order: 3; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+            /* flex-basis: 320px; */
+            /* align-self: center; */
+        }
+
+        #item-2{
+            /* order: 10; */
+            /* flex-grow: 4; */
+            /* flex-basis: 300px; */
+            /* align-self: flex-end; */
+        }
+
+        #item-5{
+            /* order: 20; */
+            /* align-self: flex-start; */
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="flex-container">
+
+    <div class="item" id="item-1">First Box</div>
+    <div class="item" id="item-2">Second Box</div>
+    <div class="item" id="item-3">Third Box</div>
+    <div class="item" id="item-4">Fourth Box</div>
+    <div class="item" id="item-5">Fifth Box</div>
+    <div class="item" id="item-6">Sixth Box</div>
+
+</div>
+
+</body>
+</html>
